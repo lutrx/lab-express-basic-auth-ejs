@@ -1,0 +1,11 @@
+<h2>Log In</h2>
+<form method="POST" action="/auth/login">
+    <label>Username:<input type="text" name="username" /></label>
+    <label>Password:<input type="password" name="password" /></label>
+    <button type="submit">Login</button>
+</form>
+
+<% if (typeof errorMessage !== "undefined") { %>
+    <p><%= errorMessage  %> </p>
+   <% } %>
+
